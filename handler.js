@@ -1188,7 +1188,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄 💎 𝐔𝐒𝐀𝐃𝐎')
+                        m.reply(+m.limit + ' 𝑬𝑴𝑷𝑬𝑹𝑶𝑹 💎 𝑨𝑵𝑼𝑺')
                 }
                 break
             }
@@ -1278,7 +1278,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
                               (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                         
-//this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '💫 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 💫' : '☠ 𝙰𝙳𝙸𝙾𝚂 ☠'), (action == 'add' ? '#welcomegc' : '#byegc')], ['♦ 𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 ♦', `#menu`]], null, {mentions: this.parseMention(text)})
+//this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '💫 𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋 💫' : '☠ انوس ☠'), (action == 'add' ? '#welcomegc' : '#byegc')], ['♦ 𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 ♦', `.menu`]], null, {mentions: this.parseMention(text)})
                 
  this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
                    }
@@ -1331,8 +1331,8 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑;;;\nFN:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nORG:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nTITLE:\nitem1.TEL;waid=5219992095479:+521 999 209 5479\nitem1.X-ABLabel:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+    let vcard = `EMPERORANUS:VCARD\nVERSION:3.0\nN:;𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋 👑;;;\nFN:𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋 👑\nORG:𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋 👑\nTITLE:\nitem1.TEL;waid=967771160204:+967 771 160 204\nitem1.X-ABLabel:𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋 👑\nX-WA-BIZ-EMPERORANUS:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-EMPERORANUS:𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋👑\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: '𓀂𝑬𝑴𝑷𝑬𝑹𝑶𝑹𝑨𝑵𝑼𝑺𓀋𝐨 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
