@@ -77,26 +77,26 @@ rows: [
 const listMessage = {
 text: `*╭─────────────────✤*\n*│* *${ucapan()}*\n*│* 🌐 *${name}* ${user.registered === true ? '*' + 'ͧͧͧͦꙶͣͤ✓ᚲᴳᴮ' + '*' : ''} 🌐\n*│*
 ╭━〔 *${wm}* 〕━⬣
-┃✜ *${lenguajeGB['smsTime']()}*	    
+┃✜ *أهلا وسهلا بك 👋🤭*	    
 ┃➺ _${time}_ 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsUptime']()}* 
-┃➺ _${uptime}_
+┃✜ *انا بوت🎭* 
+┃➺ _الإمبراطور انوس_
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsVersion']()}*
-┃➺ _${vs}_
+┃✜ *تواصل مع المطور😏*
+┃➺ _https://api.whatsapp.com/send?phone=967771160204&text=_
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsTotalUsers']()}*
-┃➺ _${Object.keys(global.db.data.users).length}_ 
+┃✜ *صراحه انوس😎*
+┃➺ _يحبكم_ 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsMode']()}*
-┃➺ _${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}_
+┃✜ *اذا حاب تصنع بوت من هنا👇*
+┃➺ _https://youtube.com/@emperoranus7621_
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsBanChats']()}*
-┃➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
+┃✜ *جروبي الاصل تعال🖤🔥*
+┃➺ _https://chat.whatsapp.com/LO17u6F9Fw4LE9izmmyOGz_ 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✜ *${lenguajeGB['smsBanUsers']()}*
-┃➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
+┃✜ *شكرا لكم مستعملين بوتات انوس♥️*
+┃➺ _احبكم احبكم_
 ╰━━━━━━━━━━━━━━━━⬣
 *» ${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeGB['smsResultPareja']()}`}*`,
 footer: `*↓ TRUSTED LINK* ✅
@@ -107,13 +107,13 @@ sections }
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
     
 } catch (e) {
-await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#انوس هذا الامر خربان ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+handler.command = /^(menu|menú|بوتي|memú|help|انوس|انوسي|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 //handler.register = true
 handler.exp = 50
 export default handler
