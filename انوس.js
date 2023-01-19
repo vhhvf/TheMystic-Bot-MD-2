@@ -113,7 +113,7 @@ console.log(e)
 }}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(menu|menú|بوتي|memú|help|انوس|انوسي|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+handler.command = /^(بوت انت شغال|شغال|بوتي|بوت|help|انوس|انوسي|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 //handler.register = true
 handler.exp = 50
 export default handler
